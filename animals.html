@@ -24,10 +24,10 @@
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
       <a class="navbar-brand" href="animals.html">Interesting Animals</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="plane.html">Plane</a>
@@ -35,11 +35,20 @@
           <li class="nav-item">
             <a class="nav-link" href="train.html">Train</a>
           </li>
-    
-        </ul>
-      </div>
-    </div>
-  </nav>
+          <li class="nav-item dropdown">
+            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+              Drop down
+              </a>   
+
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <li><a class="dropdown-item" href="plane.html">Plane Page</a></li>
+                  <li><a class="dropdown-item" href="train.html">Train Page</a></li>
+                  
+                </ul>
+              </div>
+            </div>
+      </nav>
+
   <h1>Animals by Anusha Bandari</h1>
   <div>
     <div class="row">
@@ -75,13 +84,14 @@
   </div>
 
   <div class="container">
-    <img src="image/angelfish.jpg" class="img-thumbnail" height="150" width="150">
-    <img src="image/bat.jpg" class="img-thumbnail" height="150" width="150">
-    <img src="image/Numbat.jpg" class="img-thumbnail" height="150" width="150">
+    <img src="image/angelfish.jpg" class="img-thumbnail" height="400" width="400">
+    <img src="image/bat.jpg" class="img-thumbnail" height="400" width="400">
+    <img src="image/Numbat.jpg" class="img-thumbnail" height="400" width="400">
   </div>
 
   <table class="table">
-    <caption>Letter,Animal,City,Car</caption>
+    <table class="table table-striped">
+    <caption style="caption-side: top">Letter,Animal,City,Car</caption>
     <thead>
       <tr>
         <th scope="col">Letter</th>
@@ -90,6 +100,7 @@
         <th scope="col">Car</th>
       </tr>
     </thead>
+
     <tbody>
       <tr>
         <th scope="row">B</th>
@@ -130,9 +141,10 @@
         <th scope="row">R</th>
         <td>Raggle</td>
         <td>Reno</td>
-        <td>Ranz</td>
+        <td>R</td>
       </tr>
     </tbody>
+  </table>
   </table>
 
   <div>
@@ -144,25 +156,26 @@
     <button type="button" class="btn">R</button>
   </div>
   <div class="btn-toolbar">
-    <div class="btn-group" role="group" aria-label="first group">
+    <div class="btn-group me-2" role="group" aria-label="first group">
       <button type="button" class="btn btn-success">B</button>
       <button type="button" class="btn btn-success">A</button>
       <button type="button" class="btn btn-success">N</button>
     </div>
 
-    <div cclass="btn-group" role="group" aria-label="second group">
+    <div class="btn-group me-2" role="group" aria-label="second group">
       <button type="button" class="btn btn-warning">D</button>
       <button type="button" class="btn btn-warning">A</button>
     </div>
-    <div cclass="btn-group" role="group" aria-label="third group">
+    <div class="btn-group me-2" role="group" aria-label="third group">
       <button type="button" class="btn btn-danger">R</button>
     </div>
-
   </div>
+  <br>
+  <br>
 
   <div class="dropdown">
     <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-      Select Page
+     Drop down
     </a>
   
     <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
@@ -171,6 +184,8 @@
       
     </ul>
   </div>
+  <br>
+  <br>
 
   <form>
   <div class="mb-3">
@@ -188,6 +203,37 @@
   </div>
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>
+
+<br>
+<br>
+<div class ="container row">
+  <div class="card" style="width: 18rem;">
+    <img src="image/angelfish.jpg" class="card-img-top" alt="Angel fish">
+    <div class="card-body">
+      <h5 class="card-title">Angel fish</h5>
+      <p class="card-text">Pterophyllum is a small genus of freshwater fish from the family Cichlidae known to most aquarists as angelfish..</p>
+      <a href="https://en.wikipedia.org/wiki/Pterophyllum" class="btn btn-primary">Go to page</a>
+    </div>
+  </div>
+  <div class="card" style="width: 18rem;">
+    <img src="image/bat.jpg" class="card-img-top" alt="Bat">
+    <div class="card-body">
+      <h5 class="card-title">Bat</h5>
+      <p class="card-text">Bats are mammals of the order Chiroptera.</p>
+      <a href="https://en.wikipedia.org/wiki/Bat" class="btn btn-primary">Go to page</a>
+    </div>
+  </div>
+  <div class="card" style="width: 18rem;">
+    <img src="image/Numbat.jpg" class="card-img-top" alt="Numbat">
+    <div class="card-body">
+      <h5 class="card-title">Numbat</h5>
+      <p class="card-text">The numbat (Myrmecobius fasciatus), also known as the noombat or walpurti.</p>
+      <a href="https://en.wikipedia.org/wiki/Numbat" class="btn btn-primary">Go to page</a>
+    </div>
+  </div>
+  </div>
+
+
 </body>
 
 </html>
